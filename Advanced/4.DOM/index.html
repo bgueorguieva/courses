@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DOM introduction DEMO</h1>
+    <ul>
+        <li>
+            DOM Properties Example
+        </li>
+        <li>
+            DOM Methods Example
+        </li>
+    </ul>
+    <script>
+        //function edit(element, match, replacer) {
+        //    const text = element.textContent;
+
+        //    const pattern = new RegExp(match, 'g');
+        //    const result = text.replace(pattern, replacer);
+        //    element.textContent = result;
+        //}
+        //OR
+        function edit(element, match, replacer) {
+            const text = element.textContent;
+
+            const result = text.split(match).join(replacer);
+            element.textContent = result;
+        }
+    </script>
+</body>
+
+</html>
+
